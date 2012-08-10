@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[CodingDead]]></title>
+  <link href="http://codingdead.com/atom.xml" rel="self"/>
+  <link href="http://codingdead.com/"/>
+  <updated>2012-08-10T15:55:45+03:00</updated>
+  <id>http://codingdead.com/</id>
+  <author>
+    <name><![CDATA[Коллективный блог]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CodingDead: The Beginning]]></title>
+    <link href="http://codingdead.com/blog/2012/08/10/codingdead-the-beginning/"/>
+    <updated>2012-08-10T15:54:00+03:00</updated>
+    <id>http://codingdead.com/blog/2012/08/10/codingdead-the-beginning</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
