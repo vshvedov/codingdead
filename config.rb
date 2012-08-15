@@ -2,9 +2,9 @@
 project_type = :stand_alone
 
 # Publishing paths
-http_path = "/codingdead/"
-http_images_path = "/codingdead/images"
-http_fonts_path = "/codingdead/fonts"
+http_path = "/"
+http_images_path = "/images"
+http_fonts_path = "/fonts"
 css_dir = "public/codingdead/stylesheets"
 
 # Local development paths
