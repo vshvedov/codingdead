@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: новости | CodingDead]]></title>
+  <link href="http://codingdead.com/blog/categories/новости/atom.xml" rel="self"/>
+  <link href="http://codingdead.com/"/>
+  <updated>2012-08-15T14:29:36+03:00</updated>
+  <id>http://codingdead.com/</id>
+  <author>
+    <name><![CDATA[Vlad Shvedov / Коллективный блог]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CodingDead: The Beginning]]></title>
+    <link href="http://codingdead.com/blog/2012/08/10/codingdead-the-beginning/"/>
+    <updated>2012-08-10T15:54:00+03:00</updated>
+    <id>http://codingdead.com/blog/2012/08/10/codingdead-the-beginning</id>
+    <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+]]></content>
+  </entry>
+  
+</feed>
