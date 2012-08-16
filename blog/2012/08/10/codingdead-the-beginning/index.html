@@ -124,6 +124,78 @@ quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<figure class='code'><figcaption><span>test.rb  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Account</span> <span class="o">&lt;</span> <span class="no">Idnet</span><span class="o">::</span><span class="no">Core</span><span class="o">::</span><span class="no">Account</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">attr_accessible</span> <span class="ss">:password</span><span class="p">,</span> <span class="ss">:password_confirmation</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">devise</span> <span class="ss">:database_authenticatable</span><span class="p">,</span> <span class="ss">:registerable</span><span class="p">,</span> <span class="ss">:recoverable</span><span class="p">,</span>
+</span><span class='line'>         <span class="ss">:rememberable</span><span class="p">,</span> <span class="ss">:trackable</span><span class="p">,</span> <span class="ss">:validatable</span><span class="p">,</span> <span class="ss">:confirmable</span><span class="p">,</span>
+</span><span class='line'>         <span class="ss">:email_regexp</span> <span class="o">=&gt;</span> <span class="sr">/^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">## Database authenticatable</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:encrypted_password</span><span class="p">,</span> <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="nb">String</span><span class="p">,</span> <span class="ss">:null</span> <span class="o">=&gt;</span> <span class="kp">false</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">## Recoverable</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:reset_password_token</span><span class="p">,</span>   <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="nb">String</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:reset_password_sent_at</span><span class="p">,</span> <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="no">Time</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">## Rememberable</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:remember_created_at</span><span class="p">,</span> <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="no">Time</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">## Trackable</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:sign_in_count</span><span class="p">,</span>      <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="nb">Integer</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:current_sign_in_at</span><span class="p">,</span> <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="no">Time</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:last_sign_in_at</span><span class="p">,</span>    <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="no">Time</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:current_sign_in_ip</span><span class="p">,</span> <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="nb">String</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:last_sign_in_ip</span><span class="p">,</span>    <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="nb">String</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">## Encryptable</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:password_salt</span><span class="p">,</span> <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="nb">String</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1">## Confirmable</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:confirmation_token</span><span class="p">,</span>   <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="nb">String</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:confirmed_at</span><span class="p">,</span>         <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="no">Time</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:confirmation_sent_at</span><span class="p">,</span> <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="no">Time</span>
+</span><span class='line'>  <span class="n">field</span> <span class="ss">:unconfirmed_email</span><span class="p">,</span>    <span class="ss">:type</span> <span class="o">=&gt;</span> <span class="nb">String</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
 </div>
 
 
