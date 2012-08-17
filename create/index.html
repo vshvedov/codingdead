@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>CodingDead: Начало - CodingDead</title>
+  <title>Как написать статью - CodingDead</title>
   <meta name="author" content="Vlad Shvedov / Коллективный блог">
 
   
-  <meta name="description" content="In the beginning was&#8230; git init.
-">
+  <meta name="description" content="Как написать статью Aug 17th, 2012 Введение CodingDead работает на Octopress со всеми вытекающими из этого следствиями. Хостинг на GitHub в &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://codingdead.com/blog/2012/08/10/codingdead-the-beginning/">
+  <link rel="canonical" href="http://codingdead.com/create/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -82,17 +81,55 @@
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      
-        <h1 class="entry-title">CodingDead: Начало</h1>
-      
-    
-    
+    <h1 class="entry-title">Как написать статью</h1>
+    <p class="meta">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-17T12:11:00+03:00" pubdate data-updated="true">Aug 17<span>th</span>, 2012</time></p>
+  </header>
+  
+  <h3>Введение</h3>
+
+<p><em>CodingDead</em> работает на <a href="http://octopress.org/">Octopress</a> со всеми вытекающими из этого следствиями. Хостинг на GitHub в <a href="https://github.com/vshvedov/codingdead">репозитории</a> (ветка master для исходников, ветка gh-pages для сгенерированной статики). Что бы добавить новую сатью, необходимо сделать форк этого репозитория, и после генерации статьи — pull request. Те же операции необходимо совершить и для исправления ошибки. Все обсуждения и отзывы также возложены на дюжие плечи GitHub. Если вы пишете статью или перевод, пул реквест должен содержать только .md файл (не стоит убирать &#8216;_deploy&#8217; из .gitignore) без статики.</p>
+
+<h3>Пример заголовка статьи в markdown</h3>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>---
+</span><span class='line'>layout: post
+</span><span class='line'>title: "Заголовок статьи"
+</span><span class='line'>author: "Sir Lorem Ipsum"
+</span><span class='line'>date: 2012-08-10 15:54
+</span><span class='line'>comments: true
+</span><span class='line'>categories: ruby, rails
+</span><span class='line'>---</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Версия 0.0.1</em></p>
+
+  
+    <footer>
       <p class="meta">
-         |
+        
         
 
 
@@ -105,53 +142,13 @@
   
 
 
-<time datetime="2012-08-10T15:54:00+03:00" pubdate data-updated="true">Aug 10<span>th</span>, 2012</time>
-        
-         | <a href="#disqus_thread">Comments</a>
+<time datetime="2012-08-17T12:11:00+03:00" pubdate data-updated="true">Aug 17<span>th</span>, 2012</time>
         
       </p>
-    
-  </header>
-
-
-<div class="entry-content"><p>In the beginning was&#8230; git init.</p>
-</div>
-
-
-  <footer>
-    <p class="meta">
       
+        <div class="sharing">
   
-
-<span class="byline author vcard">Автор <span class="fn">Vlad Shvedov</span></span>
-
-      
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-08-10T15:54:00+03:00" pubdate data-updated="true">Aug 10<span>th</span>, 2012</time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/новости/'>новости</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://codingdead.com/blog/2012/08/10/codingdead-the-beginning/" data-via="coding_dead" data-counturl="http://codingdead.com/blog/2012/08/10/codingdead-the-beginning/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://codingdead.com/create/index.html" data-via="coding_dead" data-counturl="http://codingdead.com/create/index.html" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -161,19 +158,10 @@
   
 </div>
 
-    
-    <p class="meta">
       
-      
-    </p>
-  </footer>
+    </footer>
+  
 </article>
-
-  <section>
-    <h2>Комментарии</h2>
-    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
-  </section>
 
 </div>
 
@@ -233,22 +221,6 @@
 
 </footer>
   
-
-<script type="text/javascript">
-      var disqus_shortname = 'codingdead';
-      
-        
-        // var disqus_developer = 1;
-        var disqus_identifier = 'http://codingdead.com/blog/2012/08/10/codingdead-the-beginning/';
-        var disqus_url = 'http://codingdead.com/blog/2012/08/10/codingdead-the-beginning/';
-        var disqus_script = 'embed.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
 
 
 
