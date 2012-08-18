@@ -22,4 +22,6 @@ categories: ruby, rails
 ---
 {% endcodeblock %}
 
-_Версия 0.0.1_
+[Шпаргалка по Markdown](http://warpedvisions.org/projects/markdown-cheat-sheet/)
+
+_Версия 0.0.2_
