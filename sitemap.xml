@@ -2,7 +2,11 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://codingdead.com/blog/2012/08/10/codingdead-the-beginning/</loc>
-        <lastmod>2012-08-17T15:13:30+03:00</lastmod>
+        <lastmod>2012-08-17T22:05:53+03:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codingdead.com/blog/2012/08/17/otobrazhieniie-proghriessa-v-tierminalie/</loc>
+        <lastmod>2012-08-18T11:51:43+03:00</lastmod>
     </url>
     <url>
         <loc>http://codingdead.com/404.html</loc>
@@ -14,14 +18,18 @@
     </url>
     <url>
         <loc>http://codingdead.com/blog/archives/</loc>
-        <lastmod>2012-08-17T15:13:30+03:00</lastmod>
+        <lastmod>2012-08-18T11:51:43+03:00</lastmod>
     </url>
     <url>
         <loc>http://codingdead.com/create/</loc>
-        <lastmod>2012-08-17T15:16:25+03:00</lastmod>
+        <lastmod>2012-08-18T12:23:22+03:00</lastmod>
     </url>
     <url>
         <loc>http://codingdead.com/</loc>
-        <lastmod>2012-08-17T15:13:30+03:00</lastmod>
+        <lastmod>2012-08-18T11:51:43+03:00</lastmod>
+    </url>
+    <url>
+        <loc>http://codingdead.com/links/</loc>
+        <lastmod>2012-08-18T12:22:11+03:00</lastmod>
     </url>
 </urlset>

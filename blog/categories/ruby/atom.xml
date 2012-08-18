@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[CodingDead]]></title>
-  <link href="http://codingdead.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: ruby | CodingDead]]></title>
+  <link href="http://codingdead.com/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://codingdead.com/"/>
   <updated>2012-08-18T12:23:39+03:00</updated>
   <id>http://codingdead.com/</id>
@@ -20,7 +20,7 @@
     <id>http://codingdead.com/blog/2012/08/17/otobrazhieniie-proghriessa-v-tierminalie</id>
     <content type="html"><![CDATA[<p>Зачастую, отображение прогресса работы терминального приложения на Ruby это не столько дань уважения к конечному пользователю, сколько единственная возможность оповестить человека по ту сторону экрана о том, что скрипт не завис и продолжает работать. Простейший вариант отображения текущего состояния может выглядеть так:</p>
 
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -28,12 +28,11 @@
 </span><span class='line'>  <span class="nb">printf</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\r</span><span class="s2">Zombies killed (in percents): %d%&quot;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
 </span><span class='line'>  <span class="nb">sleep</span><span class="p">(</span><span class="mi">0</span><span class="o">.</span><span class="mi">1</span><span class="p">)</span>
 </span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
+<p>Весь секрет в использовании escape-символа '\r' (0x0d) — возврат каретки в операторе printf. Вот еще один пример похожий на прогресс-бар из wget:</p>
 
-<p>Весь секрет в использовании escape-символа &#8216;\r&#8217; (0x0d) — возврат каретки в операторе printf. Вот еще один пример похожий на прогресс-бар из wget:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -41,12 +40,11 @@
 </span><span class='line'>  <span class="nb">printf</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\r</span><span class="s2">Loading shotgun: [%-20s]&quot;</span><span class="p">,</span> <span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="mi">5</span><span class="p">))</span>
 </span><span class='line'>  <span class="nb">sleep</span><span class="p">(</span><span class="mi">0</span><span class="o">.</span><span class="mi">5</span><span class="p">)</span>
 </span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>И еще один, для любителей перфекционизма:</p>
 
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -60,31 +58,27 @@
 <span class='line-number'>12</span>
 <span class='line-number'>13</span>
 <span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
 </pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">spinner</span> <span class="o">=</span> <span class="no">Enumerator</span><span class="o">.</span><span class="n">new</span> <span class="k">do</span> <span class="o">|</span><span class="n">e</span><span class="o">|</span>
-</span><span class='line'>  <span class="kp">loop</span> <span class="k">do</span>
-</span><span class='line'>    <span class="n">e</span><span class="o">.</span><span class="n">yield</span> <span class="s1">&#39;|&#39;</span>
-</span><span class='line'>    <span class="n">e</span><span class="o">.</span><span class="n">yield</span> <span class="s1">&#39;/&#39;</span>
-</span><span class='line'>    <span class="n">e</span><span class="o">.</span><span class="n">yield</span> <span class="s1">&#39;-&#39;</span>
-</span><span class='line'>    <span class="n">e</span><span class="o">.</span><span class="n">yield</span> <span class="s1">&#39;\\&#39;</span>
-</span><span class='line'>  <span class="k">end</span>
-</span><span class='line'><span class="k">end</span>
+</span><span class='line'>  <span class="kp">loop</span> <span class="k">do</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="mi">1</span><span class="o">.</span><span class="n">upto</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
-</span><span class='line'>  <span class="n">progress</span> <span class="o">=</span> <span class="s2">&quot;=&quot;</span> <span class="o">*</span> <span class="p">(</span><span class="n">i</span><span class="o">/</span><span class="mi">5</span><span class="p">)</span> <span class="k">unless</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">5</span>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;e.yield &#39;|&#39;</span>
+</span><span class='line'><span class="sr">e.yield &#39;/</span><span class="s1">&#39;</span>
+</span><span class='line'><span class="s1">e.yield &#39;</span><span class="o">-</span><span class="s1">&#39;</span>
+</span><span class='line'><span class="s1">e.yield &#39;</span><span class="p">\\</span><span class="err">&#39;</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;1.upto(100) do |i|</span>
+</span><span class='line'><span class="sr">  progress = &quot;=&quot; * (i/</span><span class="mi">5</span><span class="p">)</span> <span class="k">unless</span> <span class="n">i</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="mi">5</span>
 </span><span class='line'>  <span class="nb">printf</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\r</span><span class="s2">Eating brains: [%-20s] %d%% %s&quot;</span><span class="p">,</span> <span class="n">progress</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">spinner</span><span class="o">.</span><span class="n">next</span><span class="p">)</span>
 </span><span class='line'>  <span class="nb">sleep</span><span class="p">(</span><span class="mi">0</span><span class="o">.</span><span class="mi">1</span><span class="p">)</span>
 </span><span class='line'><span class="k">end</span>
-</span></code></pre></td></tr></table></div></figure>
-
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[CodingDead: Начало]]></title>
-    <link href="http://codingdead.com/blog/2012/08/10/codingdead-the-beginning/"/>
-    <updated>2012-08-10T15:54:00+03:00</updated>
-    <id>http://codingdead.com/blog/2012/08/10/codingdead-the-beginning</id>
-    <content type="html"><![CDATA[<h2>In the beginning was&#8230; git init.</h2>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 ]]></content>
   </entry>
   

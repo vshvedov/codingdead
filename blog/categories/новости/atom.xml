@@ -4,7 +4,7 @@
   <title><![CDATA[Category: новости | CodingDead]]></title>
   <link href="http://codingdead.com/blog/categories/новости/atom.xml" rel="self"/>
   <link href="http://codingdead.com/"/>
-  <updated>2012-08-17T15:16:38+03:00</updated>
+  <updated>2012-08-18T12:23:39+03:00</updated>
   <id>http://codingdead.com/</id>
   <author>
     <name><![CDATA[Vlad Shvedov / Коллективный блог]]></name>
@@ -18,7 +18,7 @@
     <link href="http://codingdead.com/blog/2012/08/10/codingdead-the-beginning/"/>
     <updated>2012-08-10T15:54:00+03:00</updated>
     <id>http://codingdead.com/blog/2012/08/10/codingdead-the-beginning</id>
-    <content type="html"><![CDATA[<p>In the beginning was... git init.</p>
+    <content type="html"><![CDATA[<h2>In the beginning was... git init.</h2>
 ]]></content>
   </entry>
   
