@@ -17,6 +17,14 @@ footer: true
 - [ThinkUp CSS Style Guide](https://github.com/ginatrapani/ThinkUp/wiki/Code-Style-Guide:-CSS)
 - [Scalable and Modular Architecture for CSS](http://smacss.com/)
 
+###Генераторы
+- [CSS3 GENERATOR](http://css3.me/)
+- [CSS3 Generator](http://css3generator.com/)
+- [CSS Gradient generator](http://www.colorzilla.com/gradient-editor/)
+- [CSS button generator](http://css3button.net/)
+- [CSS3Gen](http://css3gen.com/)
+- [Font-Face generator](http://www.fontsquirrel.com/fontface/generator/)
+
 ##Ruby
 ###Стилизация кода
 - [GitHub Ruby Styleguide](https://github.com/styleguide/ruby)
